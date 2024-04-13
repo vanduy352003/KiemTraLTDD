@@ -118,7 +118,7 @@ function StopWatch(): React.JSX.Element {
           </View>
         </TouchableOpacity>
       </View>
-      <ScrollView>
+      <ScrollView style={styles.mt}>
         <View style={styles.labResult}>
             <Text style={styles.resultText}>Lap {lapLength+1}</Text>
             <Text style={styles.resultText}>{convert(lapTime)}</Text>
@@ -217,6 +217,9 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: 'rgb(214 69 61)',
   },
+  mt: {
+    marginTop: 10,
+  }
 });
 
 export default StopWatch;
